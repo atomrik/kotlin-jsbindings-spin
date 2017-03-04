@@ -2,6 +2,7 @@
 Kotlin bindings for https://github.com/fgnass/spin.js/
 ## Usage
 1) Add as dependency
+
 2) Add http://spin.js.org/spin.min.js to scripts
 ```html
     <!-- here -->
