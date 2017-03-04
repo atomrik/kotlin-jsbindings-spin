@@ -1,6 +1,6 @@
 package su.snx.kotlin.jsbindings.spin
 
-class SpinnerOption (
+class SpinnerOptions (
         val lines: Int = 12, // The number of lines to draw
         val length: Int = 7, // The length of each line
         val width: Int = 5, // The line thickness
