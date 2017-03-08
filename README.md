@@ -1,22 +1,46 @@
 # kotlin-jsbindings-spin
 Kotlin bindings for https://github.com/fgnass/spin.js/
 ## Usage
-1) Add as dependency
-
-2) Add http://spin.js.org/spin.min.js to scripts
+1) Add repository
+```html
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>Public Repo</name>
+            <url>http://mvn.snx.su/repository/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+```   
+2) Add dependency
+```html
+    <dependencies>
+        <dependency>
+            <groupId>su.snx.kotlin.jsbindings</groupId>
+            <artifactId>spin</artifactId>
+            <version>x.x.x.x</version>
+        </dependency>
+    </dependencies>
+```
+3) Add http://spin.js.org/spin.min.js to scripts
 ```html
     <!-- here -->
     <script type="text/javascript" src="http://spin.js.org/spin.min.js"></script>
     <script type="text/javascript" src="lib/kotlin.js"></script>
 
 ```
-2) Put script tag after Kotlin's script tag
+4) Put script tag after Kotlin's script tag
 ```html
     <script type="text/javascript" src="lib/kotlin.js"></script>
     <!-- here -->
     <script type="text/javascript" src="lib/spin.js"></script>
 ```
-3) Write code:
+5) Write code:
 ```javascript
     Spinner(SpinnerOptions(speed = 5)).spin(target);
 ```
